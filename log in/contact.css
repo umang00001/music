@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4c5365;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    /* box-shadow: 0 0 5px white; */
+}
+
+.sign_in_div {
+    width: 500px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    height: 300px;
+ 
+
+}
+.div{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.div p{
+margin-left: 5px;
+}
+
+.sign_in_btn {
+    width: 150px;
+    padding: 5px 15px;
+    margin-top: 15px;
+    border-radius: 0 15px 15px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(8, 82, 100);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.sign_up_btn {
+    width: 150px;
+    padding: 5px 15px;
+    margin-top: 15px;
+    border-radius: 0 15px 15px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(67, 109, 224);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.sign_in_div input {
+    width: 350px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    outline: none;
+    border: 1px solid #000000;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: 60px;
+
+}
+
+.sign_up_div {
+    width: 500px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    height: 300px;
+    position: relative;
+}
+
+.sign_up_div input {
+    width: 350px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    outline: none;
+    border: 1px solid #000000;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+span{
+    display: block;
+    font-size: 18px;
+    margin-top: 7px;
+}
+
+/* ====================================     shutter      ============================= */
+.shutter {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.shutter p {
+    margin-top: 25px;
+    font-size: 25px;
+    color: rgba(1, 9, 19, 0.884);
+    font-weight: bold;
+}
+
+.shutter button {
+    width: 80%;
+    margin-top: 200px;
+    
+    font-size: 17px;
+    padding: 5px 0;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid #36e2ec;
+    background: none;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+.shutter button:hover{
+    background-color: #36e2ec;
+    color: #4c5365;
+}
+.shutter_2 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.shutter_2 p {
+   margin-top: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+
+}
+
+.shutter_2 button {
+    margin-top: 200px;
+    width: 80%;
+    margin-top: 200px;
+    
+    font-size: 17px;
+    padding: 5px 0;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid #36e2ec;
+    background: none;
+    transition: 0.3s linear;
+    cursor: pointer;
+    
+}
+.shutter_2 button:hover{
+    background-color: #36e2ec;
+    color: #4c5365;
+}
+.take_height {
+    animation: forwards take_height 1s;
+}
+
+.height_zero {
+    animation: forwards zero_height 1s;
+}
+
+
+@keyframes take_height{ 
+    from{height: 0%;
+
+    }
+    to{
+height: 100%;
+    }
+
+
+}
+@keyframes zero_height{
+    form{
+        height: 100%;
+    }
+    to{
+        height: 0%;
+    }
+}
