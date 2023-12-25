@@ -38,19 +38,19 @@ function update_sign_up_data() {
       setTimeout(function () {
         sign_up_notice.innerHTML = "";
       }, 3000)
-      
+
       sign_up_name.value = ""
       sign_up_username.value = ""
       sign_up_password.value = ""
 
-      sign_up_name.style.border ="1px solid #000000"
-      sign_up_p[0].innerHTML =""
+      sign_up_name.style.border = "1px solid #000000"
+      sign_up_p[0].innerHTML = ""
 
-      sign_up_username.style.border="1px solid #000000"
-      sign_up_p[1].innerHTML =""
+      sign_up_username.style.border = "1px solid #000000"
+      sign_up_p[1].innerHTML = ""
 
-      sign_up_password.style.border="1px solid #000000"
-      sign_up_p[2].innerHTML =""
+      sign_up_password.style.border = "1px solid #000000"
+      sign_up_p[2].innerHTML = ""
 
     } else {
       sign_up_notice.innerHTML = "username already exist";
@@ -94,24 +94,24 @@ sign_up_name.onblur = function () {
 
 }
 sign_up_username.onblur = function () {
-  if(sign_up_username.value!=""){
+  if (sign_up_username.value != "") {
     sign_up_p[1].innerHTML = `<i class="fa-solid fa-check fa-bounce" style="color: #216803;"></i>`;
     sign_up_username.style.border = "1px solid #216803"
   }
-  else{
+  else {
     sign_up_p[1].innerHTML = `<i class="fa-solid fa-circle-exclamation fa-beat" style="color: #fd082c;"></i>`;
   }
 
 
 }
 sign_up_password.onblur = function () {
-  if(sign_up_password.value!=""){
+  if (sign_up_password.value != "") {
     sign_up_p[2].innerHTML = `<i class="fa-solid fa-check fa-bounce" style="color: #216803;"></i>`;
     sign_up_password.style.border = "1px solid #216803"
-  }else{
+  } else {
     sign_up_p[2].innerHTML = `<i class="fa-solid fa-circle-exclamation fa-beat" style="color: #fd082c;"></i>`;
   }
-  
+
 
 
 }
@@ -140,12 +140,12 @@ function update_sign_in_data() {
       let data = JSON.parse(localStorage.getItem(sign_in_name.value))
       let pass = data.password
       if (pass == sign_in_password.value) {
-        window.location = "../music.html";
-        sessionStorage.setItem("userdata",sign_in_name.value)
+        window.location = "../index.html";
+        sessionStorage.setItem("userdata", sign_in_name.value)
 
         sign_in_name.value = "";
         sign_in_password.value = "";
-        
+
       } else {
         sign_in_notice.innerHTML = "password is incorrect";
         sign_in_notice.style.color = "red"
@@ -172,7 +172,7 @@ function update_sign_in_data() {
         sign_in_notice.innerHTML = "";
       }, 3000)
 
-    } 
+    }
 
 
   }
@@ -181,22 +181,22 @@ function update_sign_in_data() {
 // =============================== sign in  focus  input        ==========================
 
 sign_in_name.onblur = function () {
-  if(sign_in_name.value!=""){
+  if (sign_in_name.value != "") {
     p[0].innerHTML = `<i class="fa-solid fa-check fa-bounce" style="color: #216803;"></i>`
     sign_in_name.style.border = "1px solid #216803"
-  }else{
+  } else {
     p[0].innerHTML = `<i class="fa-solid fa-circle-exclamation fa-beat" style="color: #fd082c;"></i>`;
   }
-  
+
 }
 sign_in_password.onblur = function () {
-  if(sign_in_password.value!=""){
+  if (sign_in_password.value != "") {
     p[1].innerHTML = `<i class="fa-solid fa-check fa-bounce" style="color: #216803;"></i>`
     sign_in_password.style.border = "1px solid #216803"
-  }else{
+  } else {
     p[1].innerHTML = `<i class="fa-solid fa-circle-exclamation fa-beat" style="color: #fd082c;"></i>`;
   }
- 
+
 }
 
 
