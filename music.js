@@ -455,9 +455,7 @@ log_out.onclick = function () {
     window.location = ('./log in/contact.html')
 }
 
-if (settion_data == null) {
-    window.location = ('./log in/contact.html')
-}
+
 
 
 let Name = JSON.parse(localStorage.getItem(settion_data)).name
